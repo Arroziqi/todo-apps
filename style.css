@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+body {
+  height: 100vh;
+}
+.hv-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 430px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.075);
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  height: 202px;
+  justify-content: end;
+  align-items: end;
+  background-image: url(img/hero.png);
+  background-size: cover;
+  color: white;
+  padding: 13px 23px;
+  font-family: "Russo One";
+  font-size: 22px;
+}
+main {
+  padding: 23px 28px;
+  font-size: 22px;
+  font-family: "Inter";
+}
+.input-container {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  margin-bottom: 36px;
+}
+input {
+  width: 275px;
+  padding: 15px 12px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: #ebeff2;
+  font-size: 16px;
+}
+.input-container button {
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  background-color: #20eeb0;
+  border-radius: 5px 0 0 5px;
+  width: 70%;
+}
+.input-container button:last-child {
+  border-radius: 0 5px 5px 0;
+  width: 30%;
+}
+.input-action {
+  width: 88px;
+  display: flex;
+  justify-content: right;
+  gap: 1.5px;
+  border-radius: 5px;
+}
+.option-icon {
+  width: 10.4px;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+ul li {
+  display: flex;
+  justify-content: space-between;
+}
+ul li div:last-child {
+  width: 62px;
+  gap: 14px;
+}
+ul li div:first-child label {
+  font-size: 18px;
+  font-weight: 500;
+}
+ul li div:first-child p {
+  font-size: 14px;
+  font-weight: 100;
+  color: #888;
+  margin-top: 5px;
+}
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"]:checked ~ .checker {
+  background-color: #20eeb0;
+}
+.todo-action span {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  border: #20eeb0 2.5px solid;
+  border-radius: 100%;
+}
